@@ -1,0 +1,6 @@
+{
+  "name": "Cube Editor",
+  "description": "3D kinetic typography lyric video editor with multi-cube rigging, audio-synced keyframes, and offline MP4 export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

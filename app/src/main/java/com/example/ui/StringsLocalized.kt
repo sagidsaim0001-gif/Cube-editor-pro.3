@@ -1,0 +1,103 @@
+package com.example.ui
+
+import com.example.model.AppLanguage
+
+data class UiCopy(
+    val newProject: String,
+    val recentDrafts: String,
+    val templates: String,
+    val noDraftsTitle: String,
+    val noDraftsHint: String,
+    val exportBtn: String,
+    val safeArea: String,
+    val music: String,
+    val text: String,
+    val fonts: String,
+    val color: String,
+    val addBox: String,
+    val lyrics: String,
+    val keyframe: String,
+    val motion: String,
+    val bgFx: String,
+    val credit: String,
+    val snapBeat: String,
+    val autoRotate: String,
+    val autoFit: String,
+    val tapToSync: String,
+    val tapOnBeatHint: String
+)
+
+fun copyForLanguage(lang: AppLanguage): UiCopy = when (lang) {
+    AppLanguage.HINGLISH -> UiCopy(
+        newProject = "Naya Project",
+        recentDrafts = "Recent Drafts",
+        templates = "Starter Templates",
+        noDraftsTitle = "Abhi koi draft nahi hai",
+        noDraftsHint = "Naya 3D Lyric Cube banao ya neeche se ek template try karo.",
+        exportBtn = "Export",
+        safeArea = "Guides",
+        music = "Music",
+        text = "Text",
+        fonts = "Fonts",
+        color = "Color",
+        addBox = "Add Box",
+        lyrics = "Lyrics",
+        keyframe = "Keyframe",
+        motion = "Motion",
+        bgFx = "BG & FX",
+        credit = "Credit",
+        snapBeat = "Beat Snap",
+        autoRotate = "Auto Rotate",
+        autoFit = "Auto Fit",
+        tapToSync = "Tap-to-Sync",
+        tapOnBeatHint = "Gaana suno aur har line ke start pe bada button tap karo!"
+    )
+    AppLanguage.ENGLISH -> UiCopy(
+        newProject = "New Project",
+        recentDrafts = "Recent Drafts",
+        templates = "Starter Templates",
+        noDraftsTitle = "No drafts yet",
+        noDraftsHint = "Create a new 3D lyric cube or start from a template below.",
+        exportBtn = "Export",
+        safeArea = "Guides",
+        music = "Music",
+        text = "Text",
+        fonts = "Fonts",
+        color = "Color",
+        addBox = "Add Box",
+        lyrics = "Lyrics",
+        keyframe = "Keyframe",
+        motion = "Motion",
+        bgFx = "BG & FX",
+        credit = "Credit",
+        snapBeat = "Beat Snap",
+        autoRotate = "Auto Rotate",
+        autoFit = "Auto Fit",
+        tapToSync = "Tap-to-Sync",
+        tapOnBeatHint = "Listen to the track and tap when each lyric line starts."
+    )
+    AppLanguage.HINDI -> UiCopy(
+        newProject = "नया प्रोजेक्ट",
+        recentDrafts = "हाल के ड्राफ्ट",
+        templates = "टेम्पलेट्स",
+        noDraftsTitle = "अभी कोई ड्राफ्ट नहीं है",
+        noDraftsHint = "नया 3D लिरिक क्यूब बनाएं या नीचे दिए टेम्पलेट से शुरू करें।",
+        exportBtn = "एक्सपोर्ट",
+        safeArea = "गाइड",
+        music = "संगीत",
+        text = "टेक्स्ट",
+        fonts = "फ़ॉन्ट्स",
+        color = "रंग",
+        addBox = "नया बॉक्स",
+        lyrics = "लिरिक्स",
+        keyframe = "कीफ़्रेम",
+        motion = "मोशन",
+        bgFx = "बैकग्राउंड",
+        credit = "क्रेडिट",
+        snapBeat = "बीट स्नैप",
+        autoRotate = "ऑटो रोटेट",
+        autoFit = "ऑटो फ़िट",
+        tapToSync = "टैप-सिंक",
+        tapOnBeatHint = "गाना सुनें और हर लाइन शुरू होने पर बड़ा बटन दबाएं।"
+    )
+}
